@@ -1,10 +1,20 @@
 # Blender Addon : blender-ocio-file-input
 
-Handle file input colorspace from OCIO Rules
+Handle file input colorspace with OCIO Rules
 
 ![Demo](.media/header.png)
 
 This project was bootstrapped with [Blender Addon Template](git@github.com:kitchen-production/blender-addon-template.git).
+
+## How it works
+
+1. Open Blender App
+2. Go to Properties Panel > Render 
+
+![panel](.media/panel.png)
+
+3. Register File input rules (like in [Maya](https://help.autodesk.com/view/MAYAUL/2023/ENU/?guid=GUID-631C665F-3092-4B2B-90B7-2A94158870C9))
+4. Apply rule to scene
 
 ## ⚙️ Commands
 
