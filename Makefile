@@ -7,7 +7,7 @@ clean:
 	find . -name __pycache__ -delete
 
 test:
-	python -m unittest discover
+	python3 -m unittest discover
 
 coverage:
 	coverage run -m unittest discover

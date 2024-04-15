@@ -17,14 +17,14 @@ def add_default_file_rule_if_not_exists(_):
     file_input_rule_default.deletable = False
 
 
-def register():
+def register_properties():
     bpy.utils.register_class(FileInputRuleProperty)
     bpy.types.Scene.file_input_list = bpy.props.CollectionProperty(type=FileInputRuleProperty)
     bpy.types.Scene.file_input_list_index = bpy.props.IntProperty()
 
     bpy.app.handlers.load_post.append(add_default_file_rule_if_not_exists)
 
-def unregister():
+def unregister_properties():
     bpy.utils.unregister_class(FileInputRuleProperty)
     bpy.app.handlers.load_post.remove(add_default_file_rule_if_not_exists)
     del bpy.types.Scene.file_input_list
